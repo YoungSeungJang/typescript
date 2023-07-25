@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Store from './store';
 
 let data = {
   name: 'my cafe',
@@ -19,7 +20,7 @@ let data = {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <div></div>
+      <Store info={data} />
     </div>
   );
 };
