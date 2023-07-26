@@ -1,4 +1,4 @@
-const Store: React.FC = () => {
+const Store: React.FC = (s) => {
   return (
     <div>
       <div></div>
