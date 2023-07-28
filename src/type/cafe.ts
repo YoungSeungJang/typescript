@@ -20,8 +20,10 @@ type cafe = {
     detail: string;
     zipCode: Number;
   };
-  menu: {
-    name: string;
-    price: number;
-  };
+  menu: [
+    {
+      name: string;
+      price: number;
+    }
+  ];
 };
