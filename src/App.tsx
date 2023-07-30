@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Store from './store';
+import { cafe } from './type/cafe';
 
-let data = {
+let data: cafe = {
   name: 'my cafe',
   category: 'western',
   address: {

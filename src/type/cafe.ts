@@ -12,13 +12,13 @@
 //   ],
 // };
 
-type cafe = {
+export type cafe = {
   name: string;
   category: string;
   address: {
     city: string;
     detail: string;
-    zipCode: Number;
+    zipcode: Number;
   };
   menu: {
     name: string;
