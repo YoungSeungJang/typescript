@@ -16,14 +16,16 @@ export type cafe = {
   name: string;
   category: string;
   address: Address;
-  menu: {
-    name: string;
-    price: number;
-  }[];
+  menu: Menu[];
 };
 
 export type Address = {
   city: string;
   detail: string;
   zipcode: Number;
+};
+
+export type Menu = {
+  name: string;
+  price: number;
 };
