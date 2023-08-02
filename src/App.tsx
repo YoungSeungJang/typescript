@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Store from './store';
@@ -19,12 +19,12 @@ let data: cafe = {
 };
 
 const App: React.FC = () => {
+  const [myCafe, setMyCafe] = useState<cafe>(data);
   return (
     <div className="App">
-      <Store info={data} />
+      <Store info={myCafe} />
     </div>
   );
 };
 
 export default App;
-
