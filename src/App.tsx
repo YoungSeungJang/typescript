@@ -20,6 +20,9 @@ let data: cafe = {
 
 const App: React.FC = () => {
   const [myCafe, setMyCafe] = useState<cafe>(data);
+  const changeCafe = () => {
+    // setMyCafe({...myCafe,})
+  };
   return (
     <div className="App">
       <Store info={myCafe} />
