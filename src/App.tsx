@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Store from './store';
-import { cafe } from './type/cafe';
+import { Address, cafe } from './type/cafe';
 
 let data: cafe = {
   name: 'my cafe',
@@ -20,8 +20,8 @@ let data: cafe = {
 
 const App: React.FC = () => {
   const [myCafe, setMyCafe] = useState<cafe>(data);
-  const changeCafe = () => {
-    // setMyCafe({...myCafe,})
+  const changeCafe = (address: Address) => {
+    setMyCafe({ ...myCafe, address: address });
   };
   return (
     <div className="App">
