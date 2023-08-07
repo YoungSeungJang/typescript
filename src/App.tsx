@@ -25,7 +25,7 @@ const App: React.FC = () => {
   };
   return (
     <div className="App">
-      <Store info={myCafe} />
+      <Store info={myCafe} changeCafe={changeCafe} />
     </div>
   );
 };
