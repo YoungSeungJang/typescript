@@ -1,8 +1,9 @@
 import React from 'react';
-import { cafe } from './type/cafe';
+import { Address, cafe } from './type/cafe';
 
 interface OwnProps {
   info: cafe;
+  changeCafe(address: Address): void;
 }
 
 const Store: React.FC<OwnProps> = ({ info }) => {
